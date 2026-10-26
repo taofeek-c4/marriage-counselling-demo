@@ -1,0 +1,12 @@
+# Static site — no build step. Netlify serves everything in /public.
+[build]
+  publish = "public"
+  command = ""
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Prototype uses the client's brand: keep it out of search engines.
+    X-Robots-Tag = "noindex, nofollow"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"

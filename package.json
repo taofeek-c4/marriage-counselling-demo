@@ -1,0 +1,9 @@
+{
+  "name": "your-counselling-matters-prototype",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Clickable prototype: counselling intake, user accounts and consultant dashboard.",
+  "scripts": {
+    "start": "node serve.js"
+  }
+}
